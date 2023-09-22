@@ -1,0 +1,10 @@
+.card-header {
+  margin-top: 3rem;
+  background-color: aquamarine;
+}
+
+@media (max-width: 428px) {
+  .card-header {
+    margin-top: 3rem;
+  }
+}
