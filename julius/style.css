@@ -1,0 +1,63 @@
+.navbar {
+  background-color: white;
+}
+
+.card {
+  background-color: #2a9d8f1a;
+}
+
+.btn-primary {
+  background-color: #2a9d8f;
+  border-color: #2a9d8f;
+  margin-bottom: 1rem;
+}
+
+.btn-secondary {
+  background-color: #2a9d8f;
+  border-color: #2a9d8f;
+}
+
+.outline {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: #a6a6a6;
+  font-weight: bold;
+}
+
+.highlight {
+  margin-top: 2rem;
+}
+
+.highlight .text-1 {
+  color: #535353;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.highlight .text-2 {
+  color: #2a9d8f;
+  font-weight: 600;
+}
+
+#about-us h5 {
+  color: #2a9d8f;
+}
+
+#about-us h3 {
+  margin-top: 1rem;
+  color: #535353;
+}
+
+#about-us p {
+  margin-top: 2rem;
+}
+
+#we-need-you h5 {
+  color: #2a9d8f;
+}
+
+#we-need-you h3 {
+  margin-top: 1rem;
+  color: #535353;
+}
