@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 0 35px;
+}
+
+.hero-content {
+  background: rgba(42, 157, 143, 0.1);
+  padding: 15px 15px 0;
+}
+
+#about-us,
+#we-need-you,
+#growing-part,
+#articles {
+  padding-top: 100px;
+}
+
+footer {
+  padding-bottom: 200px;
+}
