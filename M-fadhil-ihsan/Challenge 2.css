@@ -1,0 +1,15 @@
+
+.back{
+    background-color: #2A9D8F1A;
+    margin:20px
+}
+.responsive{
+    max-width: 100%;
+}
+
+html,body
+{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; 
+}
