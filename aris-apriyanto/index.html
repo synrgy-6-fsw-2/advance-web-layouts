@@ -6,13 +6,13 @@
     <title>BERTUMBUH</title>
     <link
       rel="icon"
-      type="image/x-icon"
       href="./assets/icons/logo-bertumbuh.svg"
+      type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -26,88 +26,28 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbars navbar-expand-lg bg-white py-3">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand d-none d-md-block" href="#">
-            <img src="./assets/icons/logo-bertumbuh.svg" alt="Logo Bertumbuh" />
-            BERTUMBUH
-          </a>
-
-          <div class="d-none d-lg-block dropdown">
-            <a
-              href="#"
-              class="dropdown-toggle navbar-item"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Programs
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item navbar-item" href="#"
-                  >Jelajah Bersama</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item navbar-item" href="#">Tanam Pohon</a>
-              </li>
-              <li>
-                <a class="dropdown-item navbar-item" href="#"
-                  >Sosialisasi Hutan</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="d-none d-lg-block ms-auto me-2">
-            <div class="input-group flex-nowrap">
-              <input
-                type="text"
-                class="form-control form-search"
-                placeholder="Cari blog dan artikel disini ..."
-              />
-              <span class="input-group-text form-search">
-                <svg
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M21.166 21L15.1706 15L21.166 21ZM17.169 10C17.169 10.9193 16.9881 11.8295 16.6366 12.6788C16.2851 13.5281 15.7699 14.2997 15.1203 14.9497C14.4708 15.5998 13.6997 16.1154 12.8511 16.4672C12.0025 16.8189 11.0929 17 10.1744 17C9.25581 17 8.34625 16.8189 7.49762 16.4672C6.64898 16.1154 5.8779 15.5998 5.22838 14.9497C4.57886 14.2997 4.06364 13.5281 3.71213 12.6788C3.36061 11.8295 3.17969 10.9193 3.17969 10C3.17969 8.14348 3.91662 6.36301 5.22838 5.05025C6.54014 3.7375 8.31926 3 10.1744 3C12.0295 3 13.8086 3.7375 15.1203 5.05025C16.4321 6.36301 17.169 8.14348 17.169 10Z"
-                    stroke="#6D6D6D"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-            </div>
-          </div>
-
-          <button class="btn btn-success d-none d-md-block">Bergabung</button>
-
           <button
-            class="navbar-toggler d-block d-md-none d-lg-none"
+            class="navbar-toggler border-0 ps-0 d-block d-md-none"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <img src="./assets/icons/toggler.svg" alt="Toggler icon" />
           </button>
 
           <div
-            class="offcanvas offcanvas-start d-lg-none"
+            class="offcanvas offcanvas-start d-block d-md-none"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                BERTUMBUH
+                Bertumbuh
               </h5>
               <button
                 type="button"
@@ -116,12 +56,11 @@
                 aria-label="Close"
               ></button>
             </div>
+
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
 
                 <li class="nav-item">
@@ -147,41 +86,61 @@
             </div>
           </div>
 
+          <a class="navbar-brand py-0 me-0 d-none d-md-block" href="#">
+            <img
+              src="./assets/icons/logo-bertumbuh.svg"
+              class="navbar-logo"
+              alt="Logo Bertumbuh"
+            />
+          </a>
+
+          <div class="d-none d-md-block me-auto">
+            <h4 class="mb-0">BERTUMBUH</h4>
+          </div>
+
+          <div class="d-none d-md-block">
+            <button class="btn btn-success-custom">Bergabung</button>
+          </div>
+
           <div class="d-block d-md-none">
             <h4 class="mb-0">BERTUMBUH</h4>
           </div>
 
-          <a class="navbar-brand d-block d-md-none" href="#">
-            <img src="./assets/icons/logo-bertumbuh.svg" alt="Logo Bertumbuh" />
+          <a
+            class="navbar-brand me-0 d-flex justify-content-end d-block d-md-none"
+            href="#"
+          >
+            <img
+              src="./assets/icons/logo-bertumbuh.svg"
+              class="navbar-logo"
+              alt="Logo Bertumbuh"
+            />
           </a>
         </div>
       </nav>
 
-      <nav
-        class="navbar navbars navbar-expand-lg bg-white d-none d-md-block"
-        style="border-top: 1px solid #6d6d6d"
-      >
+      <nav class="navbar navbar-expand-lg navbar-second d-none d-md-block">
         <div class="container">
           <button
-            class="navbar-toggler px-0"
+            class="navbar-toggler border-0 ps-0"
             type="button"
             data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
+            data-bs-target="#offcanvasNavbar2"
             aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <img src="./assets/icons/toggler.svg" alt="Toggler icon" />
           </button>
 
           <div
             class="offcanvas offcanvas-start"
             tabindex="-1"
-            id="offcanvasNavbar"
+            id="offcanvasNavbar2"
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                BERTUMBUH
+                Bertumbuh
               </h5>
               <button
                 type="button"
@@ -190,12 +149,11 @@
                 aria-label="Close"
               ></button>
             </div>
+
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
 
                 <li class="nav-item">
@@ -225,73 +183,85 @@
     </header>
 
     <main>
-      <section id="hero">
+      <section class="hero" id="hero">
         <div class="container">
-          <div class="hero-content">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <h1 class="section-title title-lg">
-                  Bersama Lindungi Bumi Kita
-                </h1>
-                <p class="section-content">
-                  Kami bermimpi untuk menanam lebih dari 10 juta pohon dan
-                  menciptakan dunia yang lebih indah dan asri untuk kita, dia,
-                  dan semua.
-                </p>
+          <div class="hero-wrapper d-flex">
+            <div class="hero-content">
+              <h1 class="title-lg text-darked d-block d-md-none">
+                Bersama Lindungi Bumi Kita
+              </h1>
+              <h1 class="title-lg text-darked d-none d-md-block">
+                Bersama Lindungi Bumi Kita Untuk Masa Depan
+              </h1>
+              <p class="section-content text-hero">
+                Kami bermimpi untuk menanam lebih dari 10 juta pohon dan
+                menciptakan dunia yang lebih indah dan asri untuk kita, dia, dan
+                semua.
+              </p>
+
+              <div class="btn-hero d-flex flex-column">
+                <div class="">
+                  <!-- mb-3 mobile -->
+                  <a href="#" class="btn btn-success-custom"
+                    >Eksplorasi Bertumbuh</a
+                  >
+                </div>
 
                 <div>
-                  <button class="btn btn-success">Eksplorasi Bertumbuh</button>
-                  <button class="btn btn-outline-success">
+                  <a href="#" class="btn btn-outline-success">
                     <img
-                      src="./assets/icons/polygon-1.svg"
+                      src="./assets/icons/polygon.svg"
                       class="me-2"
                       alt="Play"
                     />
                     Lihat Video
-                  </button>
+                  </a>
                 </div>
               </div>
-              <div class="col-12 col-md-6">
-                <div class="hero-image">
-                  <img
-                    src="./assets/images/pohon.png"
-                    class="img-fluid"
-                    alt="Pohon"
-                  />
-                </div>
-              </div>
+            </div>
+
+            <div class="hero-image d-block d-md-none">
+              <img
+                src="./assets/images/hero-image.png"
+                class="img-fluid"
+                ="Hero image"
+              />
+            </div>
+
+            <div class="hero-image d-none d-md-block">
+              <img
+                src="./assets/images/md/hero-image.png"
+                class="img-fluid"
+                ="Hero image"
+              />
             </div>
           </div>
 
-          <div>
-            <div class="typography d-flex flex-column pt-5">
-              <div class="typography-1">
-                <span>DITLANCE</span>
-                <span class="">OWTHEST</span>
-              </div>
-              <div class="typography-2">
-                <span>NEOVASI</span>
-                <span class="">ONAGO</span>
-              </div>
-            </div>
+          <div class="typography">
+            <span>DITLANCE</span>
+            <span>OWTHEST</span>
+            <span>NEOVASI</span>
+            <span>ONAGO</span>
           </div>
         </div>
       </section>
 
-      <section id="planted-trees">
+      <section class="planted-trees" id="planted-trees">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="d-flex align-items-center justify-content-center">
-                <div class="pe-4">
+                <div class="trees-image">
                   <img
-                    src="./assets/images/planted-trees.png"
-                    alt="Pohon Tertanam"
+                    src="./assets/images/pohon-tertanam.png"
+                    class="img-fluid"
+                    alt="Pohon tertanam"
                   />
                 </div>
-                <div>
-                  <h2 class="section-title title-lg mb-0">1.351.003</h2>
-                  <p class="section-title title-small mb-0">Pohon Tertanam</p>
+
+                <div class="ps-4">
+                  <h2 class="title-lg mb-0">1.351.003</h2>
+                  <p class="title-small title-green mb-0">Pohon Tertanam</p>
                 </div>
               </div>
             </div>
@@ -299,7 +269,7 @@
         </div>
       </section>
 
-      <section id="about-us">
+      <section class="about-us" id="about-us">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6">
@@ -307,82 +277,79 @@
                 <img
                   src="./assets/images/about-us.png"
                   class="img-fluid"
-                  alt="About us"
+                  alt="Tentang kami"
                 />
               </div>
             </div>
 
             <div class="col-12 col-md-6">
-              <div class="">
-                <h5 class="section-title title-small">Tentang Kami</h5>
-                <h5 class="section-title mb-20">BERTUMBUH - Save The World</h5>
-                <p class="section-content pb-1">
-                  BERTUMBUH - Adalah organisasi non-profit yang mempunyai tujuan
-                  untuk Melindungi, menjaga, merawat, dan melestarikan
-                  pohon-pohon yang ada di bumi ini
-                </p>
-                <a href="#" class="btn btn-success">Lihat Selengkapnya</a>
-              </div>
+              <h2 class="title-small title-green">Tentang Kami</h2>
+              <h1 class="section-title">BERTUMBUH - Save The World</h1>
+              <p class="section-content">
+                BERTUMBUH - Adalah organisasi non-profit yang mempunyai tujuan
+                untuk Melindungi, menjaga, merawat, dan melestarikan pohon-pohon
+                yang ada di bumi ini
+              </p>
+
+              <button class="btn btn-success-custom">Lihat Selengkapnya</button>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="we-need-you">
+      <section class="we-need-you" id="we-need-you">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6">
               <div class="image-content">
                 <img
-                  src="./assets/images/we-need-you.png"
+                  src="./assets/images/growth-activities.png"
+                  alt="Kami butuh kamu"
                   class="img-fluid"
-                  alt="Farmer"
                 />
               </div>
             </div>
+
             <div class="col-12 col-md-6 order-md-first">
-              <div class="">
-                <h5 class="section-title title-small">Kami Butuh Kamu</h5>
-                <h5 class="section-title">Kenapa BERTUMBUH Butuh Kamu ?</h5>
-                <div class="d-flex">
-                  <div class="pe-5">
-                    <h5>15,3 M</h5>
-                    <p>Pohon ditebang</p>
-                  </div>
-                  <div>
-                    <h5>14,7 ha</h5>
-                    <p>Hutan ditebang</p>
-                  </div>
+              <h2 class="title-small title-green">Kami Butuh Kamu</h2>
+              <h1 class="section-title">Kenapa BERTUMBUH Butuh Kamu ?</h1>
+
+              <div class="row description-need-you">
+                <div class="col-6">
+                  <h3 class="text-medium">15,3 M</h3>
+                  <p class="section-content">Pohon ditebang</p>
                 </div>
-                <p class="section-content">
-                  15,3 Milyar pohon setiap tahun ditebang di dunia serta
-                  hilangnya 14,7 hektare lahan hutan hilang di indonesia. Hali
-                  ini menyebabkan bumi tidak stabil dan kami mengajak kamu untuk
-                  bergabung dan meraih tujuan bersama
-                </p>
-                <a href="#" class="btn btn-success">Lihat Selengkapnya</a>
+                <div class="col-6">
+                  <h3 class="text-medium">14,7 ha</h3>
+                  <p class="section-content">Hutan ditebang</p>
+                </div>
               </div>
+
+              <p class="section-content">
+                15,3 Milyar pohon setiap tahun ditebang di dunia serta hilangnya
+                14,7 hektare lahan hutan hilang di indonesia. Hali ini
+                menyebabkan bumi tidak stabil dan kami mengajak kamu untuk
+                bergabung dan meraih tujuan bersama
+              </p>
+
+              <button class="btn btn-success-custom">Lihat Selengkapnya</button>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="growing-part">
+      <section class="join-us" id="join-us">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="text-center">
-                <h4 class="section-title title-small">
-                  Menjadi Bagian Bertumbuh
-                </h4>
-                <h4 class="section-title">Buat Hal Sederhana Jadi Bermakna</h4>
-                <p class="section-content content-small mx-auto text-center">
-                  Ciptakan setiap kegiatan jadi lebih bermakna dan bermanfaat
-                </p>
-              </div>
+            <div class="col-12 col-md-6 join-us-content text-center">
+              <h2 class="title-small title-green">Menjadi Bagian Bertumbuh</h2>
+              <h1 class="section-title">Buat Hal Sederhana Jadi Bermakna</h1>
+              <p class="content-small">
+                Ciptakan setiap kegiatan jadi lebih bermakna dan bermanfaat
+              </p>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 col-md-6 col-lg-12">
               <div class="bg-carousel">
                 <div
                   id="carouselExampleInterval"
@@ -393,31 +360,26 @@
                     <div class="carousel-item active" data-bs-interval="3000">
                       <div class="d-flex justify-content-center">
                         <div class="card card-carousel">
-                          <div class="card-body">
+                          <div class="card-body p-0">
                             <img
-                              src="./assets/images/testimony-1.png"
+                              src="./assets/images/donatur.png"
                               class="img-fluid mb-3"
                               alt="Donatur"
                             />
-                            <p class="card-text pt-1">
+
+                            <p class="card-text mt-1">
                               Anda dapat membantu dengan berdonasi untuk biaya
                               penanaman, perwatan, bibit dan biaya oprasional
                               lainnya
                             </p>
-                            <a href="#" class="card-link"
+
+                            <a href="#" class="link-success"
                               >Menjadi Donatur
-                              <svg
-                                width="17"
-                                height="6"
-                                viewBox="0 0 17 6"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M17 3L12.7256 -5.0972e-08L12.7256 2.4L4.29296e-08 2.4L2.86197e-08 3.6L12.7256 3.6L12.7256 6L17 3Z"
-                                  fill="#2A9D8F"
-                                />
-                              </svg>
+                              <img
+                                src="./assets/icons/card-arrow-right.svg"
+                                class="ps-1"
+                                alt="Card arrow right"
+                              />
                             </a>
                           </div>
                         </div>
@@ -427,32 +389,27 @@
                     <div class="carousel-item" data-bs-interval="3000">
                       <div class="d-flex justify-content-center">
                         <div class="card card-carousel">
-                          <div class="card-body">
+                          <div class="card-body p-0">
                             <img
-                              src="./assets/images/testimony-2.png"
+                              src="./assets/images/relawan.png"
                               class="img-fluid mb-3"
                               alt="Relawan"
                             />
-                            <p class="card-text pt-1">
+
+                            <p class="card-text mt-1">
                               Kamu dapat membantu bertumbuh dengan menjadi
                               relawan kami. Kamu dapat langsung menanam pohon,
                               membantu berkebun, melakukan sosialisasi dan
                               program-program menarik lainnya
                             </p>
-                            <a href="#" class="card-link"
+
+                            <a href="#" class="link-success"
                               >Menjadi Relawan
-                              <svg
-                                width="17"
-                                height="6"
-                                viewBox="0 0 17 6"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M17 3L12.7256 -5.0972e-08L12.7256 2.4L4.29296e-08 2.4L2.86197e-08 3.6L12.7256 3.6L12.7256 6L17 3Z"
-                                  fill="#2A9D8F"
-                                />
-                              </svg>
+                              <img
+                                src="./assets/icons/card-arrow-right.svg"
+                                class="ps-1"
+                                alt="Card arrow right"
+                              />
                             </a>
                           </div>
                         </div>
@@ -462,31 +419,26 @@
                     <div class="carousel-item">
                       <div class="d-flex justify-content-center">
                         <div class="card card-carousel">
-                          <div class="card-body">
+                          <div class="card-body p-0">
                             <img
-                              src="./assets/images/testimony-3.png"
+                              src="./assets/images/petani.png"
                               class="img-fluid mb-3"
                               alt="Petani"
                             />
-                            <p class="card-text pt-1">
+
+                            <p class="card-text mt-1">
                               Kamu akan belajar tentang cara menanam pohon,
                               merawat pohon serta hal lain dengan bergabung
                               sebagai petani
                             </p>
-                            <a href="#" class="card-link"
+
+                            <a href="#" class="link-success"
                               >Menjadi Petani
-                              <svg
-                                width="17"
-                                height="6"
-                                viewBox="0 0 17 6"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M17 3L12.7256 -5.0972e-08L12.7256 2.4L4.29296e-08 2.4L2.86197e-08 3.6L12.7256 3.6L12.7256 6L17 3Z"
-                                  fill="#2A9D8F"
-                                />
-                              </svg>
+                              <img
+                                src="./assets/icons/card-arrow-right.svg"
+                                class="ps-1"
+                                alt="Card arrow right"
+                              />
                             </a>
                           </div>
                         </div>
@@ -494,7 +446,7 @@
                     </div>
                   </div>
 
-                  <div class="text-center" style="padding-top: 42px">
+                  <div class="text-center" style="padding-top: 2.8125rem">
                     <div class="carousel-bg-button">
                       <button
                         class="carousel-control-prev"
@@ -502,18 +454,10 @@
                         data-bs-target="#carouselExampleInterval"
                         data-bs-slide="prev"
                       >
-                        <svg
-                          width="20"
-                          height="9"
-                          viewBox="0 0 20 9"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M-1.82131e-07 4.16667L5.02873 8.33333L5.02873 5L20 5L20 3.33333L5.02874 3.33333L5.02874 2.19813e-07L-1.82131e-07 4.16667Z"
-                            fill="#21A099"
-                          />
-                        </svg>
+                        <img
+                          src="./assets/icons/arrow-left.svg"
+                          alt="Arrow left"
+                        />
 
                         <span class="visually-hidden">Previous</span>
                       </button>
@@ -524,18 +468,10 @@
                         data-bs-target="#carouselExampleInterval"
                         data-bs-slide="next"
                       >
-                        <svg
-                          width="20"
-                          height="10"
-                          viewBox="0 0 20 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20 4.99935L14.9713 0.832683L14.9713 4.16602L5.96244e-08 4.16601L3.97496e-08 5.83268L14.9713 5.83268L14.9713 9.16602L20 4.99935Z"
-                            fill="white"
-                          />
-                        </svg>
+                        <img
+                          src="./assets/icons/arrow-right.svg"
+                          alt="Arrow right"
+                        />
 
                         <span class="visually-hidden">Next</span>
                       </button>
@@ -548,30 +484,32 @@
         </div>
       </section>
 
-      <section id="articles">
+      <section class="news-and-articles" id="news-and-articles">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <div>
-                <h5 class="section-title title-small">Baca Tulisan Kami</h5>
-                <h5 class="section-title">Artikel & Event Terbaru</h5>
-                <p>Baca dan ikuti event Bertumbuh</p>
+              <div class="article-content">
+                <h2 class="title-small title-green">Baca Tulisan Kami</h2>
+                <h1 class="section-title">Artikel & Event Terbaru</h1>
+                <p class="section-content content-small text-start">
+                  Baca dan ikuti event Bertumbuh
+                </p>
               </div>
             </div>
 
             <div class="col-12 col-md-6">
-              <div class="image-content">
-                <img
-                  src="./assets/images/hutan.png"
-                  class="img-fluid"
-                  alt="Hutan"
-                />
-              </div>
+              <div class="main-article">
+                <div class="image-content">
+                  <img
+                    src="./assets/images/hutan.png"
+                    alt="Hutan"
+                    class="img-fluid"
+                  />
+                </div>
 
-              <div>
-                <h5 class="">
+                <h3 class="title-small title-darkgrey">
                   Selamatkan Hutan Untuk Bumi yang Sehat dan Asri
-                </h5>
+                </h3>
                 <p class="section-content">
                   Hutan telah banyak memberi manfaat bagi kita semua. Namun
                   melihat data sekarang hutan di dunia ....
@@ -580,70 +518,115 @@
             </div>
 
             <div class="col-12 col-md-6">
-              <div class="">
-                <div class="article-content d-flex">
-                  <div class="article-image">
+              <div class="row">
+                <div class="col-3 pe-0">
+                  <div class="img-content">
                     <img
                       src="./assets/images/article-1.png"
-                      class="img-fluid"
                       alt="Artikel 1"
+                      class="img-fluid"
                     />
-                  </div>
-
-                  <div>
-                    <h6 class="article-title">
-                      Kenali Pengertian, Fungsi dan Jenis Hutan
-                    </h6>
-                    <p class="mb-0">1 Januari 2022</p>
                   </div>
                 </div>
 
-                <div class="article-content-end d-flex">
-                  <div class="article-image">
+                <div class="col-9 mb-4">
+                  <h4 class="text-article">
+                    Kenali Pengertian, Fungsi dan Jenis Hutan
+                  </h4>
+                  <p class="section-content content-small mb-0">
+                    1 Januari 2022
+                  </p>
+                </div>
+
+                <div class="col-3 pe-0 d-none d-md-block">
+                  <div class="img-content">
                     <img
                       src="./assets/images/article-2.png"
-                      class="img-fluid"
                       alt="Artikel 2"
+                      class="img-fluid"
                     />
                   </div>
+                </div>
 
-                  <div>
-                    <h6 class="article-title">
-                      Kegiatan Naik Gunung Ciremai bersama ...
-                    </h6>
-                    <p class="mb-0">10 Desember 2021</p>
+                <div class="col-9 mb-4 d-none d-md-block">
+                  <h4 class="text-article">
+                    Kegiatan Naik Gunung Ciremai bersama ...
+                  </h4>
+                  <p class="section-content content-small mb-0">
+                    10 Desember 2021
+                  </p>
+                </div>
+
+                <div class="col-3 pe-0 d-none d-md-block">
+                  <div class="img-content">
+                    <img
+                      src="./assets/images/article-2.png"
+                      alt="Artikel 2"
+                      class="img-fluid"
+                    />
                   </div>
                 </div>
-                <a href="#" class="btn btn-success">Lihat Selengkapnya</a>
+
+                <div class="col-9 mb-4 d-none d-md-block">
+                  <h4 class="text-article">
+                    Kegiatan Naik Gunung Ciremai bersama ...
+                  </h4>
+                  <p class="section-content content-small mb-0">
+                    10 Desember 2021
+                  </p>
+                </div>
+
+                <div class="col-3 pe-0">
+                  <div class="img-content">
+                    <img
+                      src="./assets/images/article-2.png"
+                      alt="Artikel 2"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-9">
+                  <h4 class="text-article">
+                    Kegiatan Naik Gunung Ciremai bersama ...
+                  </h4>
+                  <p class="section-content content-small mb-0">
+                    10 Desember 2021
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-5">
+                <button class="btn btn-success-custom">
+                  Lihat Selengkapnya
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="subscribe-newsletter">
+      <section class="subscribe" id="subscribe">
         <div class="container">
-          <div class="text-center">
-            <h1 class="section-title">Subscribe Newsletter</h1>
-            <p class="section-content content-small mx-auto text-center">
-              Jangan sampai terlewat informasi dari Bertumbuh
-            </p>
+          <div class="row subscribe-content">
+            <div class="col-12 text-center">
+              <h1 class="section-title">Subscribe Newsletter</h1>
+              <p class="section-content content-small">
+                Jangan sampai terlewat informasi dari Bertumbuh
+              </p>
+            </div>
 
-            <div class="input-group input-group-custome mb-3 mt-3">
-              <input
-                type="text"
-                class="form-control form-small border-0 p-0 me-3"
-                placeholder="Masukkan email anda ..."
-                aria-label="Masukkan email anda ..."
-                aria-describedby="button-addon2"
-              />
-              <button
-                class="btn btn-success btn-small"
-                type="button"
-                id="button-addon2"
-              >
-                Subscribe
-              </button>
+            <div class="col-12">
+              <div class="input-group input-group-custom">
+                <input
+                  type="email"
+                  class="form-control form-input"
+                  placeholder="Masukkan email anda ..."
+                />
+                <button class="btn btn-success-custom btn-small">
+                  Subscribe
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -655,11 +638,17 @@
         <div class="row">
           <div class="col-12 col-sm-3">
             <div class="footer-icon">
-              <img src="./assets/icons/logo-footer.svg" alt="Logo Footer" />
+              <img
+                src="./assets/icons/logo-bertumbuh-footer.svg"
+                class="img-fluid"
+                alt="Logo bertumbuh footer"
+              />
             </div>
           </div>
 
-          <div class="col-12 col-md-2 footer-dropdown">
+          <div
+            class="col-12 col-md-1 col-lg-1 offset-md-1 offset-lg-3 footer-dropdown"
+          >
             <div class="d-block d-md-none dropdown">
               <h4
                 class="dropdown-toggle text-dark-green"
@@ -677,16 +666,16 @@
             </div>
 
             <div class="d-none d-md-block">
-              <h4>Posts</h4>
+              <h4 class="footer-text-title">Posts</h4>
               <ul class="p-0">
-                <li class="footer-item"><a href="#">Berita</a></li>
-                <li class="footer-item"><a href="#">Event</a></li>
-                <li class="footer-item"><a href="#">Blog</a></li>
+                <li><a class="footer-item" href="#">Berita</a></li>
+                <li><a class="footer-item" href="#">Event</a></li>
+                <li><a class="footer-item" href="#">Blog</a></li>
               </ul>
             </div>
           </div>
 
-          <div class="col-12 col-md-3 footer-dropdown">
+          <div class="col-12 col-md-3 col-lg-2 footer-dropdown footer-end">
             <div class="d-block d-md-none dropdown">
               <h4
                 class="dropdown-toggle text-dark-green"
@@ -704,16 +693,16 @@
             </div>
 
             <div class="d-none d-md-block">
-              <h4>Program</h4>
+              <h4 class="footer-text-title">Programs</h4>
               <ul class="p-0">
-                <li class="footer-item"><a href="#">Jelajah Bersama</a></li>
-                <li class="footer-item"><a href="#">Tanam Pohon</a></li>
-                <li class="footer-item"><a href="#">Sosialisasi Hutan</a></li>
+                <li><a class="footer-item" href="#">Jelajah Bersama</a></li>
+                <li><a class="footer-item" href="#">Tanam Pohon</a></li>
+                <li><a class="footer-item" href="#">Sosialisasi Hutan</a></li>
               </ul>
             </div>
           </div>
 
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 col-lg-3">
             <div class="d-block d-md-none dropdown">
               <h4
                 class="dropdown-toggle text-dark-green"
@@ -729,19 +718,21 @@
                   Kabupaten Cirebon, Jawa Barat, 45183
                 </li>
                 <li class="dropdown-item">(0231) 635308</li>
-                <li class="dropdown-item">surat@smkn1emahabang.sch.id</li>
+                <li class="dropdown-item" style="overflow: hidden">
+                  surat@smkn1emahabang.sch.id
+                </li>
               </ul>
             </div>
 
             <div class="d-none d-md-block">
-              <h4>Alamat</h4>
+              <h4 class="footer-text-title">Alamat</h4>
               <ul class="p-0">
                 <li class="footer-item">
                   Jl. Kh. Wahid Hasyim No.76, Cipeujeuh Wetan, Kec. Lemahabang,
                   Kabupaten Cirebon, Jawa Barat, 45183
                 </li>
                 <li class="footer-item">(0231) 635308</li>
-                <!-- <li class="footer-item">surat@smkn1emahabang.sch.id</li> -->
+                <li class="footer-item">surat@smkn1emahabang.sch.id</li>
               </ul>
             </div>
           </div>
@@ -780,6 +771,7 @@
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
